@@ -1,0 +1,416 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.dataaccess\\smarthomeapi.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|solutionrelative:smarthomeapi.dataaccess\\smarthomeapi.dataaccess.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\userdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\userdevice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.dataaccess\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|solutionrelative:smarthomeapi.dataaccess\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\appuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.dataaccess\\data\\appdbcontextfactory .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|solutionrelative:smarthomeapi.dataaccess\\data\\appdbcontextfactory .cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3285E69C-419A-4978-A2DB-2F4F97DB05B0}|SmartHomeAPI\\SmartHomeAPI.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{3285E69C-419A-4978-A2DB-2F4F97DB05B0}|SmartHomeAPI\\SmartHomeAPI.csproj|solutionrelative:smarthomeapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|solutionrelative:smarthomeapi.dataaccess\\serviceregistrations\\dataaccessserviceregistration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3285E69C-419A-4978-A2DB-2F4F97DB05B0}|SmartHomeAPI\\SmartHomeAPI.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3285E69C-419A-4978-A2DB-2F4F97DB05B0}|SmartHomeAPI\\SmartHomeAPI.csproj|solutionrelative:smarthomeapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.dataaccess\\datainitializers\\dbcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{244AC04F-C716-4B67-8F4A-80D68E2DD2CF}|SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj|solutionrelative:smarthomeapi.dataaccess\\datainitializers\\dbcontextinitializer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|solutionrelative:smarthomeapi.business\\services\\implementations\\authservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.business\\dtos\\appuserdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|solutionrelative:smarthomeapi.business\\dtos\\appuserdtos\\logindto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\enum\\identityroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\enum\\identityroles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\device.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\devicecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\devicecategory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\location.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\entities\\sensorreading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\entities\\sensorreading.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.business\\services\\abstractions\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|solutionrelative:smarthomeapi.business\\services\\abstractions\\iauthservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.business\\abstractions\\dtos\\idto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|solutionrelative:smarthomeapi.business\\abstractions\\dtos\\idto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.business\\smarthomeapi.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|solutionrelative:smarthomeapi.business\\smarthomeapi.business.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.core\\smarthomeapi.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4B68285F-60F8-4767-8AF8-495B8F6E5D8F}|SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj|solutionrelative:smarthomeapi.core\\smarthomeapi.core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|c:\\users\\namjoon\\source\\repos\\smarthomeapi\\smarthomeapi.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3982555F-E838-44A7-8467-A17B742BFFED}|SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj|solutionrelative:smarthomeapi.business\\class1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppDbContextFactory .cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\Data\\AppDbContextFactory .cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.DataAccess\\Data\\AppDbContextFactory .cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\Data\\AppDbContextFactory .cs",
+              "RelativeToolTip": "SmartHomeAPI.DataAccess\\Data\\AppDbContextFactory .cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:32:35.495Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DataAccessServiceRegistration.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "RelativeToolTip": "SmartHomeAPI.DataAccess\\ServiceRegistrations\\DataAccessServiceRegistration.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAQwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:19:01.371Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "DbContextInitializer.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\DataInitializers\\DbContextInitializer.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.DataAccess\\DataInitializers\\DbContextInitializer.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\DataInitializers\\DbContextInitializer.cs",
+              "RelativeToolTip": "SmartHomeAPI.DataAccess\\DataInitializers\\DbContextInitializer.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAQwAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:14:40.358Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "SmartHomeAPI.DataAccess",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj",
+              "RelativeDocumentMoniker": "SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj",
+              "RelativeToolTip": "SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-21T11:13:37.698Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.DataAccess\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "SmartHomeAPI.DataAccess\\Data\\AppDbContext.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAYwAcAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:13:43.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI\\Program.cs",
+              "RelativeToolTip": "SmartHomeAPI\\Program.cs",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAYwD0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:10:59.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "SmartHomeAPI\\appsettings.json",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI\\appsettings.json",
+              "RelativeToolTip": "SmartHomeAPI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-21T11:10:41.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AuthService.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Services\\Implementations\\AuthService.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Business\\Services\\Implementations\\AuthService.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Services\\Implementations\\AuthService.cs",
+              "RelativeToolTip": "SmartHomeAPI.Business\\Services\\Implementations\\AuthService.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAswDUAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:02:06.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "IDto.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Abstractions\\Dtos\\IDto.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Business\\Abstractions\\Dtos\\IDto.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Abstractions\\Dtos\\IDto.cs",
+              "RelativeToolTip": "SmartHomeAPI.Business\\Abstractions\\Dtos\\IDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:00:15.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "LoginDto.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Dtos\\AppUserDtos\\LoginDto.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Business\\Dtos\\AppUserDtos\\LoginDto.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Dtos\\AppUserDtos\\LoginDto.cs",
+              "RelativeToolTip": "SmartHomeAPI.Business\\Dtos\\AppUserDtos\\LoginDto.cs",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAqwAYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:58:46.604Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "SmartHomeAPI.Business",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj",
+              "RelativeToolTip": "SmartHomeAPI.Business\\SmartHomeAPI.Business.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-21T10:56:13.815Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "IAuthService.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Services\\Abstractions\\IAuthService.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Business\\Services\\Abstractions\\IAuthService.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Services\\Abstractions\\IAuthService.cs",
+              "RelativeToolTip": "SmartHomeAPI.Business\\Services\\Abstractions\\IAuthService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:56:41.046Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IdentityRoles.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Enum\\IdentityRoles.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\Enum\\IdentityRoles.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Enum\\IdentityRoles.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\Enum\\IdentityRoles.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:54:27.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserDevice.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\UserDevice.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\UserDevice.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\UserDevice.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\UserDevice.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:32:07.244Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "AppUser.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\AppUser.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\AppUser.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\AppUser.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\AppUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAQAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:31:58.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SensorReading.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\SensorReading.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\SensorReading.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\SensorReading.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\SensorReading.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:30:00.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Location.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Location.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\Location.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Location.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\Location.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:26:27.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Device.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Device.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\Device.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Device.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\Device.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:25:31.558Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DeviceCategory.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\DeviceCategory.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\DeviceCategory.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\DeviceCategory.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\DeviceCategory.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:24:33.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "SmartHomeAPI.Core",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj",
+              "RelativeToolTip": "SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-21T10:22:52.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Core\\Entities\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\Entities\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "SmartHomeAPI.Core\\Entities\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:23:30.307Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Class1.cs",
+              "DocumentMoniker": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Class1.cs",
+              "RelativeDocumentMoniker": "SmartHomeAPI.Business\\Class1.cs",
+              "ToolTip": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Business\\Class1.cs",
+              "RelativeToolTip": "SmartHomeAPI.Business\\Class1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T10:19:05.865Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

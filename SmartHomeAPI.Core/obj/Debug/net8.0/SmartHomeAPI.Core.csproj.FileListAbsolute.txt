@@ -1,0 +1,15 @@
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\bin\Debug\net8.0\SmartHomeAPI.Core.deps.json
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\bin\Debug\net8.0\SmartHomeAPI.Core.runtimeconfig.json
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\bin\Debug\net8.0\SmartHomeAPI.Core.dll
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\bin\Debug\net8.0\SmartHomeAPI.Core.pdb
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.csproj.AssemblyReference.cache
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.AssemblyInfoInputs.cache
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.AssemblyInfo.cs
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.csproj.CoreCompileInputs.cache
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.sourcelink.json
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.dll
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\refint\SmartHomeAPI.Core.dll
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.pdb
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\SmartHomeAPI.Core.genruntimeconfig.cache
+C:\Users\namjoon\source\repos\SmartHomeAPI\SmartHomeAPI.Core\obj\Debug\net8.0\ref\SmartHomeAPI.Core.dll
