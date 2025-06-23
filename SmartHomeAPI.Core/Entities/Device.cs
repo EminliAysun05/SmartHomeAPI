@@ -11,7 +11,7 @@ public class Device : BaseEntity
     public double PowerUsage { get; set; }
 
     [MaxLength(20)]
-    public string HealthStatus { get; set; } = null!;// e.g., "Healthy", "Warning", "Critical"
+    public string HealthStatus { get; set; } = null!;
 
     public DeviceCategory Category { get; set; } = null!;
     public int CategoryId { get; set; }

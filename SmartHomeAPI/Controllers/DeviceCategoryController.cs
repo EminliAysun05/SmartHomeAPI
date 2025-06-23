@@ -19,8 +19,8 @@ namespace SmartHomeAPI.Controllers
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
-            var result = await _service.GetAllAsync();
-            return Ok(result);
+            var categories = await _service.GetAllAsync();
+            return Ok(categories);
         }
 
         [HttpPost]

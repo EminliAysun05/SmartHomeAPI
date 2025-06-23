@@ -1,6 +1,15 @@
-﻿namespace SmartHomeAPI.Business.AutoMappers.DeviceAutoMappers;
+﻿using AutoMapper;
+using SmartHomeAPI.Business.Dtos.DeviceDtos;
+using SmartHomeAPI.Core.Entities;
 
-public class DeviceAutoMapper
+namespace SmartHomeAPI.Business.AutoMappers.DeviceAutoMappers;
+
+public class DeviceAutoMapper : Profile
 {
-
+    public DeviceAutoMapper()
+    {
+        CreateMap<Device, DeviceGetDto>().ReverseMap();
+        CreateMap<DeviceCreateDto, Device>().ReverseMap();
+        CreateMap<DeviceUpdateDto, Device>().ReverseMap();
+    }
 }

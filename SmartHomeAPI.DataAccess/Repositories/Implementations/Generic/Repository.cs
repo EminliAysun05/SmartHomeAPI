@@ -48,14 +48,26 @@ public abstract class Repository<T> : IRepository<T> where T : class
         return entity;
     }
 
+    //public async Task<T?> GetAsync(int id, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null)
+    //{
+    //    var query = _getQueryWithIncludes(include);
+
+    //    var entity = await query.FirstOrDefaultAsync(x =>
+    //    (int)x.GetType().GetProperty("Id")!.GetValue(x)! == id);
+
+    //    return entity;
+    //}
     public async Task<T?> GetAsync(int id, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null)
     {
         var query = _getQueryWithIncludes(include);
 
-        var entity = await query.FirstOrDefaultAsync(x =>
-        (int)x.GetType().GetProperty("Id")!.GetValue(x)! == id);
+        var parameter = Expression.Parameter(typeof(T), "x");
+        var property = Expression.Property(parameter, "Id");
+        var constant = Expression.Constant(id);
+        var equal = Expression.Equal(property, constant);
+        var lambda = Expression.Lambda<Func<T, bool>>(equal, parameter);
 
-        return entity;
+        return await query.FirstOrDefaultAsync(lambda);
     }
 
     public IQueryable<T> GetFilter(Expression<Func<T, bool>> expression, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null)

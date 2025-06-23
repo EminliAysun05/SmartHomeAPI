@@ -27,6 +27,7 @@ public static class BusinessServiceRegistration
        services.AddScoped<IAuthService, AuthService>();
        services.AddScoped<ILocationService, LocationService>();
        services.AddScoped<IDeviceCategoryService, DeviceCategoryService>();
+       services.AddScoped<IDeviceService, DeviceService>();
 
     }
 }
