@@ -163,6 +163,64 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SmartHomeAPI.Controllers.SensorReadingController",
+    "Method": "GetAll",
+    "RelativePath": "api/SensorReading",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.SensorReadingController",
+    "Method": "Create",
+    "RelativePath": "api/SensorReading",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sensorReadingCreateDto",
+        "Type": "SmartHomeAPI.Business.Dtos.SensorReadingDtos.SensorReadingCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.SensorReadingController",
+    "Method": "GetById",
+    "RelativePath": "api/SensorReading/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.SensorReadingController",
+    "Method": "GetLatestByDeviceId",
+    "RelativePath": "api/SensorReading/latest/{deviceId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "deviceId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SmartHomeAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
