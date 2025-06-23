@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SmartHomeAPI.Business.Dtos.LocationDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
 using SmartHomeAPI.Core.Entities;
@@ -34,8 +35,14 @@ public class LocationService : ILocationService
         return dtoList;
     }
 
-    //public Task<LocationWithDevicesDto?> GetLocationWithDevicesAsync(int id)
-    //{
+    public async Task<LocationWithDevicesDto?> GetLocationWithDevicesAsync(int id)
+    {
+        var locationWithDevices = await _locationRepository.GetAsync(id, include: x => x.Include(l => l.Devices));
+        if (locationWithDevices == null)
+            return null;
 
-    //}
+        var dto = _mapper.Map<LocationWithDevicesDto>(locationWithDevices);
+        return dto;
+
+    }
 }

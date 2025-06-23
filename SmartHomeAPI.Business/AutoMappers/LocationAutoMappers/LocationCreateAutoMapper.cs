@@ -9,7 +9,9 @@ public class LocationCreateAutoMapper : Profile
     public LocationCreateAutoMapper()
     {
         CreateMap<Location, LocationGetDto>().ReverseMap();
-       // CreateMap<Location, LocationWithDevicesDto>().ReverseMap();
         CreateMap<LocationCreateDto, Location>().ReverseMap();
+        CreateMap<Location, LocationWithDevicesDto>()
+        .ForMember(dest => dest.Devices, opt => opt.MapFrom(src => src.Devices));
+        CreateMap<Device, DeviceDto>().ReverseMap();
     }
 }

@@ -4,9 +4,9 @@ using SmartHomeAPI.Core.Entities;
 
 namespace SmartHomeAPI.Business.AutoMappers.DeviceAutoMappers;
 
-public class DeviceAutoMapper : Profile
+public class DeviceCreateAutoMapper : Profile
 {
-    public DeviceAutoMapper()
+    public DeviceCreateAutoMapper()
     {
         CreateMap<Device, DeviceGetDto>().ReverseMap();
         CreateMap<DeviceCreateDto, Device>().ReverseMap();

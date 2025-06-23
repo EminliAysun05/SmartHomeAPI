@@ -28,6 +28,8 @@ public static class BusinessServiceRegistration
        services.AddScoped<ILocationService, LocationService>();
        services.AddScoped<IDeviceCategoryService, DeviceCategoryService>();
        services.AddScoped<IDeviceService, DeviceService>();
+       services.AddScoped<ISensorReadingService, SensorReadingService>();
+       services.AddScoped<IAnalyticService, AnalyticService>();
 
     }
 }

@@ -1,48 +1,46 @@
-﻿using Microsoft.AspNetCore.Http;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using SmartHomeAPI.Business.Dtos.LocationDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
-using Swashbuckle.AspNetCore.Annotations;
 
-namespace SmartHomeAPI.Controllers
+namespace SmartHomeAPI.Controllers;
+
+[Route("api/[controller]")]
+[ApiController]
+
+public class LocationController : ControllerBase
 {
-    [Route("api/[controller]")]
-    [ApiController]
-    //[Tags("Location Management")]
-    public class LocationController : ControllerBase
+    private readonly ILocationService _locationService;
+
+    public LocationController(ILocationService locationService)
     {
-        private readonly ILocationService _locationService;
+        _locationService = locationService;
+    }
 
-        public LocationController(ILocationService locationService)
+    [HttpGet]
+    public async Task<IActionResult> GetAll()
+    {
+        var locations = await _locationService.GetAllLocations();
+        return Ok(locations);
+    }
+
+    [HttpGet("{id}/devices")]
+    public async Task<IActionResult> GetLocationWithDevices(int id)
+    {
+        var locationWithDevices = await _locationService.GetLocationWithDevicesAsync(id);
+        if (locationWithDevices == null)
+            return NotFound($"Location with ID {id} not found.");
+        return Ok(locationWithDevices);
+    }
+
+    [HttpPost]
+    public async Task<IActionResult> Create([FromBody] LocationCreateDto locationCreateDto)
+    {
+        if (locationCreateDto == null)
         {
-            _locationService = locationService;
+            return BadRequest("Location data is null.");
         }
 
-        [HttpGet]
-      
-
-        public async Task<IActionResult> GetAll()
-        {
-            var locations = await _locationService.GetAllLocations();
-            return Ok(locations);
-        }
-
-        //[HttpGet("{id}/devices")]
-        //public async Task<IActionResult> GetLocationWithDevices(int id)
-        //{
-
-        //}
-
-        [HttpPost]
-        public async Task<IActionResult> Create([FromBody] LocationCreateDto locationCreateDto)
-        {
-            if (locationCreateDto == null)
-            {
-                return BadRequest("Location data is null.");
-            }
-
-            var createdLocation = await _locationService.CreateLocation(locationCreateDto);
-            return CreatedAtAction(nameof(GetAll), new { id = createdLocation.Id }, createdLocation);
-        }
+        var createdLocation = await _locationService.CreateLocation(locationCreateDto);
+        return CreatedAtAction(nameof(GetAll), new { id = createdLocation.Id }, createdLocation);
     }
 }
