@@ -35,6 +35,9 @@
             "projectReferences": {
               "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj": {
                 "projectPath": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.Core\\SmartHomeAPI.Core.csproj"
+              },
+              "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj": {
+                "projectPath": "C:\\Users\\namjoon\\source\\repos\\SmartHomeAPI\\SmartHomeAPI.DataAccess\\SmartHomeAPI.DataAccess.csproj"
               }
             }
           }
@@ -56,7 +59,11 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -149,11 +156,11 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[12.0.0, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[12.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -250,11 +257,11 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[12.0.0, )"
             },
             "AutoMapper.Extensions.Microsoft.DependencyInjection": {
               "target": "Package",
-              "version": "[8.0.1, )"
+              "version": "[12.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -354,7 +361,11 @@
           "dependencies": {
             "AutoMapper": {
               "target": "Package",
-              "version": "[10.0.0, )"
+              "version": "[12.0.0, )"
+            },
+            "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+              "target": "Package",
+              "version": "[12.0.0, )"
             },
             "Microsoft.AspNetCore.Authentication.JwtBearer": {
               "target": "Package",
@@ -381,6 +392,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "Swashbuckle.AspNetCore.Annotations": {
+              "target": "Package",
+              "version": "[9.0.1, )"
             }
           },
           "imports": [

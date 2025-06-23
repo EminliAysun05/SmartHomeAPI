@@ -32,6 +32,58 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SmartHomeAPI.Controllers.DeviceCategoryController",
+    "Method": "GetAll",
+    "RelativePath": "api/DeviceCategory",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.DeviceCategoryController",
+    "Method": "Create",
+    "RelativePath": "api/DeviceCategory",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SmartHomeAPI.Business.Dtos.DeviceCategoryDtos.DeviceCategoryCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.LocationController",
+    "Method": "GetAll",
+    "RelativePath": "api/Location",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.LocationController",
+    "Method": "Create",
+    "RelativePath": "api/Location",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "locationCreateDto",
+        "Type": "SmartHomeAPI.Business.Dtos.LocationDtos.LocationCreateDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SmartHomeAPI.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
