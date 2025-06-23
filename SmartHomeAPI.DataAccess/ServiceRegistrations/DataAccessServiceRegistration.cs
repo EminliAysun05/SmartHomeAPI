@@ -5,6 +5,8 @@ using Microsoft.Extensions.DependencyInjection;
 using SmartHomeAPI.Core.Entities;
 using SmartHomeAPI.DataAccess.Data;
 using SmartHomeAPI.DataAccess.DataInitializers;
+using SmartHomeAPI.DataAccess.Repositories.Abstractions;
+using SmartHomeAPI.DataAccess.Repositories.Implementations;
 
 namespace SmartHomeAPI.DataAccess.ServiceRegistrations;
 
@@ -19,10 +21,10 @@ public static class DataAccessServiceRegistration
         services.AddScoped<DbContextInitializer>();
 
         services.AddMemoryCache();
+        services.AddScoped<AppUser>();
 
-      //  _addRepositories(services);
         _addIdentity(services);
-        
+        _addRepositories(services);
 
         return services;
     }
@@ -43,5 +45,15 @@ public static class DataAccessServiceRegistration
         }).AddEntityFrameworkStores<AppDbContext>()
           .AddDefaultTokenProviders();
           
+    }
+
+    private static void _addRepositories(IServiceCollection services)
+    {
+   
+        services.AddScoped<IDeviceRepository, DeviceRepository>();
+        services.AddScoped<IDeviceCategoryRepository, DeviceCategoryRepository>();
+        services.AddScoped<ILocationRepository, LocationRepository>();
+        services.AddScoped<ISensorReadingRepository, SensorReadingRepository>();
+        services.AddScoped<IUserDeviceRepository, UserDeviceRepository>();
     }
 }

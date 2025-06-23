@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SmartHomeAPI.DataAccess")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d1a40730f30e714f78c7d0afc94c0e4011a63e99")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+abea3632939b37ebd3cf82e1bd4fe8cc64faaa71")]
 [assembly: System.Reflection.AssemblyProductAttribute("SmartHomeAPI.DataAccess")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SmartHomeAPI.DataAccess")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

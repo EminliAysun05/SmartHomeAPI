@@ -1,6 +1,7 @@
 
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
+using SmartHomeAPI.Business.ServiceRegistrations;
 using SmartHomeAPI.DataAccess.ServiceRegistrations;
 using System.Text;
 
@@ -20,6 +21,7 @@ namespace SmartHomeAPI
             builder.Services.AddSwaggerGen();
 
             builder.Services.AddDataAccessServices(builder.Configuration);
+            builder.Services.AddBusinessServices();
             builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
                 .AddJwtBearer(options =>
                 {
@@ -46,6 +48,7 @@ namespace SmartHomeAPI
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+            app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();
 

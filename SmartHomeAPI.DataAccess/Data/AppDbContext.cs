@@ -16,4 +16,10 @@ public class AppDbContext : IdentityDbContext<AppUser>
 
 
     }
+
+    public DbSet<Device> Devices { get; set; }
+    public DbSet<DeviceCategory> DeviceCategories { get; set; }
+    public DbSet<Location> Locations { get; set; }
+    public DbSet<SensorReading> SensorReading { get; set; }
+    public DbSet<UserDevice> UserDevices { get; set; }
 }

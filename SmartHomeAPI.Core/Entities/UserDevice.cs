@@ -1,6 +1,8 @@
-﻿namespace SmartHomeAPI.Core.Entities;
+﻿using SmartHomeAPI.Core.Entities.Common;
 
-public class UserDevice 
+namespace SmartHomeAPI.Core.Entities;
+
+public class UserDevice : BaseEntity
 {
     public int UserId { get; set; }
     public int DeviceId { get; set; }

@@ -14,6 +14,7 @@ public class DbContextInitializer
     private readonly RoleManager<IdentityRole> _roleManager;
     private readonly IConfiguration _configuration;
     private readonly AppUser _admin;
+   
 
     public DbContextInitializer(AppDbContext context, UserManager<AppUser> userManager, RoleManager<IdentityRole> roleManager, IConfiguration configuration, AppUser admin)
     {
