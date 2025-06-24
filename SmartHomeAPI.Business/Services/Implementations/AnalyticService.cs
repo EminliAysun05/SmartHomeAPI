@@ -1,6 +1,9 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SmartHomeAPI.Business.AutoMappers.LocationAutoMappers;
 using SmartHomeAPI.Business.Dtos.AnalyticDtos;
+using SmartHomeAPI.Business.Dtos.DeviceDtos;
+using SmartHomeAPI.Business.Dtos.PaginationDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
 using SmartHomeAPI.DataAccess.Repositories.Abstractions;
 
@@ -9,10 +12,12 @@ namespace SmartHomeAPI.Business.Services.Implementations;
 public class AnalyticService : IAnalyticService
 {
     private readonly IDeviceRepository _deviceRepository;
+    private readonly IMapper _mapper;
 
-    public AnalyticService(IDeviceRepository deviceRepository)
+    public AnalyticService(IDeviceRepository deviceRepository, IMapper mapper)
     {
         _deviceRepository = deviceRepository;
+        _mapper = mapper;
     }
 
     public async Task<List<DeviceHealthyReportDto>> GetDeviceHealthyReportAsync()
@@ -46,6 +51,25 @@ public class AnalyticService : IAnalyticService
                DeviceCount = d.Location.Devices.Count,
            });
         return locationUsage.ToListAsync();
+    }
+
+    public async Task<PagedResultDto<DeviceGetDto>> GetPaginatedAsync(int page, int pageSize)
+    {
+        var query = _deviceRepository.GetAll();
+        var totalCount = await query.CountAsync();
+        var paginatedQuery = _deviceRepository.Paginate(query, pageSize, page);
+        var allDevices = paginatedQuery.ToListAsync();
+
+        var dtoList = _mapper.Map<List<DeviceGetDto>>(allDevices);
+
+        return new PagedResultDto<DeviceGetDto>
+        {
+            TotalCount = totalCount,
+            PageSize = pageSize,
+            Page = page,
+            Items = dtoList
+        };
+
     }
 
     public async Task<double> GetTotalEnergyUsageAsync()

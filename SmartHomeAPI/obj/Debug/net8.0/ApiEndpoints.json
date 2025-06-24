@@ -40,6 +40,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "SmartHomeAPI.Controllers.AnalyticController",
+    "Method": "GetPaginatedDevices",
+    "RelativePath": "api/Analytic/paginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "SmartHomeAPI.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",

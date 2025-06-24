@@ -263,6 +263,58 @@ namespace SmartHomeAPI.DataAccess.Migrations
                     b.HasIndex("LocationId");
 
                     b.ToTable("Devices");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 4,
+                            CategoryId = 4,
+                            HealthStatus = "Healthy",
+                            IsOnline = true,
+                            LocationId = 4,
+                            Name = "Temperature Sensor",
+                            PowerUsage = 2.5
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CategoryId = 4,
+                            HealthStatus = "Warning",
+                            IsOnline = false,
+                            LocationId = 5,
+                            Name = "Motion Sensor",
+                            PowerUsage = 1.2
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CategoryId = 5,
+                            HealthStatus = "Healthy",
+                            IsOnline = true,
+                            LocationId = 4,
+                            Name = "Smart Light",
+                            PowerUsage = 3.0
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CategoryId = 5,
+                            HealthStatus = "Critical",
+                            IsOnline = false,
+                            LocationId = 6,
+                            Name = "Smart Plug",
+                            PowerUsage = 0.5
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CategoryId = 6,
+                            HealthStatus = "Healthy",
+                            IsOnline = true,
+                            LocationId = 7,
+                            Name = "Security Camera",
+                            PowerUsage = 4.0
+                        });
                 });
 
             modelBuilder.Entity("SmartHomeAPI.Core.Entities.DeviceCategory", b =>
@@ -286,6 +338,26 @@ namespace SmartHomeAPI.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("DeviceCategories");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 4,
+                            Description = "Sensor devices",
+                            Name = "Sensor"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Description = "Devices that act on data",
+                            Name = "Actuator"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Description = "Security and monitoring devices",
+                            Name = "Camera"
+                        });
                 });
 
             modelBuilder.Entity("SmartHomeAPI.Core.Entities.Location", b =>
@@ -312,6 +384,36 @@ namespace SmartHomeAPI.DataAccess.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Locations");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 4,
+                            Floor = 1,
+                            Name = "Living Room",
+                            RoomType = "Common"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            Floor = 1,
+                            Name = "Kitchen",
+                            RoomType = "Food"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            Floor = 2,
+                            Name = "Bedroom",
+                            RoomType = "Private"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            Floor = 0,
+                            Name = "Garage",
+                            RoomType = "Storage"
+                        });
                 });
 
             modelBuilder.Entity("SmartHomeAPI.Core.Entities.SensorReading", b =>

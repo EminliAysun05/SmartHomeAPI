@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using SmartHomeAPI.Core.Entities;
+using SmartHomeAPI.DataAccess.DataInitializers;
 using System.Reflection;
 
 namespace SmartHomeAPI.DataAccess.Data;
@@ -13,6 +14,7 @@ public class AppDbContext : IdentityDbContext<AppUser>
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
 
         base.OnModelCreating(modelBuilder);
+        modelBuilder.AddSeedData();
 
 
     }

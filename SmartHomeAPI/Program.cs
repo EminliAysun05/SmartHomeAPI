@@ -2,6 +2,8 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using SmartHomeAPI.Business.ServiceRegistrations;
+using SmartHomeAPI.DataAccess.Data;
+using SmartHomeAPI.DataAccess.DataInitializers;
 using SmartHomeAPI.DataAccess.ServiceRegistrations;
 using System.Text;
 
@@ -41,7 +43,13 @@ namespace SmartHomeAPI
             builder.Services.AddAuthorization();
 
             var app = builder.Build();
+           
 
+            if (app.Environment.IsDevelopment())
+            {
+                app.UseSwagger();
+                app.UseSwaggerUI();
+            }
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();

@@ -48,15 +48,6 @@ public abstract class Repository<T> : IRepository<T> where T : class
         return entity;
     }
 
-    //public async Task<T?> GetAsync(int id, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null)
-    //{
-    //    var query = _getQueryWithIncludes(include);
-
-    //    var entity = await query.FirstOrDefaultAsync(x =>
-    //    (int)x.GetType().GetProperty("Id")!.GetValue(x)! == id);
-
-    //    return entity;
-    //}
     public async Task<T?> GetAsync(int id, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null)
     {
         var query = _getQueryWithIncludes(include);
