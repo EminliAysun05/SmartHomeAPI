@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using SmartHomeAPI.Business.Dtos.LocationDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
 
@@ -15,7 +16,7 @@ public class LocationController : ControllerBase
     {
         _locationService = locationService;
     }
-
+    [Authorize(Roles = "Admin")]
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {

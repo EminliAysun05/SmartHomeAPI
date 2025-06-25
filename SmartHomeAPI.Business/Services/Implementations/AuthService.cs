@@ -5,6 +5,7 @@ using Microsoft.IdentityModel.Tokens;
 using SmartHomeAPI.Business.Dtos.AppUserDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
 using SmartHomeAPI.Core.Entities;
+using SmartHomeAPI.Core.Entities.Enum;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
@@ -50,7 +51,10 @@ public class AuthService : IAuthService
         var result = await _userManager.CreateAsync(user, model.Password);
 
         if (result.Succeeded)
+        {
+            await _userManager.AddToRoleAsync(user, IdentityRoles.Member.ToString()); 
             return (true, "User registered successfully");
+        }
 
         return (false, string.Join(", ", result.Errors.Select(e => e.Description)));
     }
@@ -72,11 +76,13 @@ public class AuthService : IAuthService
         var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_config["Jwt:SecretKey"]!));
         var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-        var claims = new[]
+        var claims = new List<Claim>
         {
                 new Claim(ClaimTypes.Name, user.UserName!),
                 new Claim(ClaimTypes.Email, user.Email!)
             };
+        var roles = _userManager.GetRolesAsync(user).Result;
+        claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
         var token = new JwtSecurityToken(
             issuer: _config["Jwt:Issuer"],
@@ -94,6 +100,30 @@ public class AuthService : IAuthService
         var users =  _userManager.Users.ToList();
         var dtos = _mapper.Map<List<UserGetDto>>(users);
         return dtos;
+    }
+
+    public async Task<(bool success, string message)> RegisterAdminAsync(RegisterDto model)
+    {
+        if (string.IsNullOrEmpty(model.FirstName) || string.IsNullOrEmpty(model.LastName))
+        {
+            return (false, "FirstName and LastName are required");
+        }
+
+        var user = new AppUser
+        {
+            UserName = model.UserName,
+            Email = model.Email,
+            FirstName = model.FirstName,
+            LastName = model.LastName
+        };
+
+        var result = await _userManager.CreateAsync(user, model.Password);
+        if (result.Succeeded)
+        {
+            await _userManager.AddToRoleAsync(user, "Admin"); 
+            return (true, "Admin registered successfully");
+        }
+        return (false, string.Join(", ", result.Errors.Select(e => e.Description)));
     }
 
 }

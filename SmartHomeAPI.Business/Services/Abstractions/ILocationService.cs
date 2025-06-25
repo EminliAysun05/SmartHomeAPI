@@ -1,5 +1,4 @@
-﻿using SmartHomeAPI.Business.Dtos.AnalyticDtos;
-using SmartHomeAPI.Business.Dtos.LocationDtos;
+﻿using SmartHomeAPI.Business.Dtos.LocationDtos;
 
 namespace SmartHomeAPI.Business.Services.Abstractions;
 
@@ -9,6 +8,4 @@ public interface ILocationService
     Task<LocationGetDto>  CreateLocation(LocationCreateDto locationCreateDto);
     Task<LocationWithDevicesDto?> GetLocationWithDevicesAsync(int id);
     
-
-
 }

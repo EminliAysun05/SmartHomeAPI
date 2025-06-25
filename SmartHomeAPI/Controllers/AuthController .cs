@@ -1,6 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
 using SmartHomeAPI.Business.Dtos.AppUserDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
+using SmartHomeAPI.Core.Entities;
 
 namespace SmartHomeAPI.Controllers;
 
@@ -9,10 +11,12 @@ namespace SmartHomeAPI.Controllers;
 public class AuthController : ControllerBase
 {
     private readonly IAuthService _authService;
+    private readonly UserManager<AppUser> _userManager;
 
-    public AuthController(IAuthService authService)
+    public AuthController(IAuthService authService, UserManager<AppUser> userManager)
     {
         _authService = authService;
+        _userManager = userManager;
     }
 
     [HttpPost("register")]
@@ -24,6 +28,8 @@ public class AuthController : ControllerBase
 
         return Ok(result.message);
     }
+
+
 
     [HttpPost("login")]
     public async Task<IActionResult> Login([FromBody] LoginDto model)
@@ -43,5 +49,24 @@ public class AuthController : ControllerBase
     {
         var users = await _authService.GetAllUserAsync();
         return Ok(users);
+    }
+
+    [HttpGet("check-admin")]
+    public async Task<IActionResult> CheckAdmin()
+    {
+        var adminUser = await _userManager.FindByNameAsync("adminuser");
+        if (adminUser == null)
+        {
+            return NotFound("Admin user tapılmadı");
+        }
+
+        var roles = await _userManager.GetRolesAsync(adminUser);
+        return Ok(new
+        {
+            UserName = adminUser.UserName,
+            Email = adminUser.Email,
+            Roles = roles,
+            HasAdminRole = roles.Contains("Admin")
+        });
     }
 }

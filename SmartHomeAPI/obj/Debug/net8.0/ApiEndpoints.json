@@ -41,6 +41,16 @@
   },
   {
     "ContainingType": "SmartHomeAPI.Controllers.AuthController",
+    "Method": "CheckAdmin",
+    "RelativePath": "api/auth/check-admin",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
     "HttpMethod": "POST",
