@@ -7,7 +7,7 @@ namespace SmartHomeAPI.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
-
+[Authorize(Roles = "Admin")]
 public class LocationController : ControllerBase
 {
     private readonly ILocationService _locationService;
@@ -16,7 +16,7 @@ public class LocationController : ControllerBase
     {
         _locationService = locationService;
     }
-    [Authorize(Roles = "Admin")]
+    
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
