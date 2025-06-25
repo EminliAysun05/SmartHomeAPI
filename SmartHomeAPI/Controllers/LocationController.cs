@@ -36,11 +36,10 @@ public class LocationController : ControllerBase
     public async Task<IActionResult> Create([FromBody] LocationCreateDto locationCreateDto)
     {
         if (locationCreateDto == null)
-        {
             return BadRequest("Location data is null.");
-        }
 
         var createdLocation = await _locationService.CreateLocation(locationCreateDto);
         return CreatedAtAction(nameof(GetAll), new { id = createdLocation.Id }, createdLocation);
     }
+    
 }

@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using Microsoft.EntityFrameworkCore;
 using SmartHomeAPI.Business.Dtos.DeviceDtos;
+using SmartHomeAPI.Business.Dtos.PaginationDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
 using SmartHomeAPI.Core.Entities;
 using SmartHomeAPI.DataAccess.Repositories.Abstractions;
@@ -66,5 +68,53 @@ public class DeviceService : IDeviceService
         return dto;
 
 
+    }
+    public async Task<PagedResultDto<DeviceGetDto>> GetPaginatedAsync(int page, int pageSize)
+    {
+        var query = _deviceRepository.GetAll();
+        var totalCount = await query.CountAsync();
+        var paginatedQuery = _deviceRepository.Paginate(query, pageSize, page);
+        var allDevices = paginatedQuery.ToListAsync();
+
+        var dtoList = _mapper.Map<List<DeviceGetDto>>(allDevices);
+
+        return new PagedResultDto<DeviceGetDto>
+        {
+            TotalCount = totalCount,
+            PageSize = pageSize,
+            Page = page,
+            Items = dtoList
+        };
+
+    }
+
+    public async Task<List<DeviceGetDto>> SearchByName(string name)
+    {
+        var devices = await _deviceRepository.GetAll()
+            .Where(d => d.Name.Contains(name.ToLower()))
+            .ToListAsync();
+
+       
+        var dtos = _mapper.Map<List<DeviceGetDto>>(devices);
+        return dtos;
+    }
+
+    public async Task<List<DeviceGetDto>> GetOnlineDevices(string name)
+    {
+        var onlineDevices = await _deviceRepository.GetAll()
+            .Where(d => d.IsOnline && d.Name.Contains(name.ToLower()))
+            .ToListAsync();
+
+        var dtos = _mapper.Map<List<DeviceGetDto>>(onlineDevices);
+        return dtos;
+    }
+
+    public async Task<List<DeviceGetDto>> GetDevicesByLocationIdAsync(int locationId)
+    {
+        var devices = await _deviceRepository.GetAll()
+            .Where(d => d.LocationId == locationId)
+            .ToListAsync();
+        var dtos = _mapper.Map<List<DeviceGetDto>>(devices);
+        return dtos;
     }
 }

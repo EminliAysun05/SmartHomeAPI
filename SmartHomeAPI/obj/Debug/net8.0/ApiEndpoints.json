@@ -40,27 +40,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "SmartHomeAPI.Controllers.AnalyticController",
-    "Method": "GetPaginatedDevices",
-    "RelativePath": "api/Analytic/paginated",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "page",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "pageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "SmartHomeAPI.Controllers.AuthController",
     "Method": "Login",
     "RelativePath": "api/auth/login",
@@ -90,6 +69,16 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.AuthController",
+    "Method": "GetAllUsers",
+    "RelativePath": "api/auth/users",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -167,6 +156,59 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.DeviceController",
+    "Method": "GetOnlineDevices",
+    "RelativePath": "api/Device/online-devices",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.DeviceController",
+    "Method": "GetPaginatedDevices",
+    "RelativePath": "api/Device/paginated",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "page",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "pageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SmartHomeAPI.Controllers.DeviceController",
+    "Method": "SearchByName",
+    "RelativePath": "api/Device/search",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "name",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

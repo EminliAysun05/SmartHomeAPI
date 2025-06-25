@@ -8,7 +8,7 @@ public interface ILocationService
     Task<List<LocationGetDto>> GetAllLocations();
     Task<LocationGetDto>  CreateLocation(LocationCreateDto locationCreateDto);
     Task<LocationWithDevicesDto?> GetLocationWithDevicesAsync(int id);
-
     
+
 
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using AutoMapper;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using SmartHomeAPI.Business.Dtos.AppUserDtos;
@@ -16,14 +17,18 @@ public class AuthService : IAuthService
     private readonly UserManager<AppUser> _userManager;
     private readonly SignInManager<AppUser> _signInManager;
     private readonly IConfiguration _config;
+    private readonly IMapper _mapper;
 
 
-    public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration config)
+    public AuthService(UserManager<AppUser> userManager, SignInManager<AppUser> signInManager, IConfiguration config, IMapper mapper)
     {
         _userManager = userManager;
         _signInManager = signInManager;
         _config = config;
+        _mapper = mapper;
     }
+
+
 
     public async Task<(bool succes, string message)> RegisterAsync(RegisterDto model)
     {
@@ -82,6 +87,13 @@ public class AuthService : IAuthService
             );
 
         return new JwtSecurityTokenHandler().WriteToken(token);
+    }
+
+    public async Task<List<UserGetDto>> GetAllUserAsync()
+    {
+        var users =  _userManager.Users.ToList();
+        var dtos = _mapper.Map<List<UserGetDto>>(users);
+        return dtos;
     }
 
 }

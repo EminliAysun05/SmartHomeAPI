@@ -12,5 +12,6 @@ public interface IAuthService
     //Task<UserGetDto> GetUserAsync(string id);
 
     Task<(bool succes, string message)> RegisterAsync(RegisterDto model);
-        Task<(bool succes, string message, string? Token)> LoginAsync(LoginDto model);
+    Task<(bool succes, string message, string? Token)> LoginAsync(LoginDto model);
+    Task<List<UserGetDto>> GetAllUserAsync();
 }

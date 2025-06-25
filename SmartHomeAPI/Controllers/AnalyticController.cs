@@ -43,10 +43,5 @@ public class AnalyticController : ControllerBase
         return Ok(deviceHealth);
     }
 
-    [HttpGet("paginated")]
-    public async Task<IActionResult> GetPaginatedDevices([FromQuery] int page = 1, [FromQuery] int pageSize = 1)
-    {
-        var paginatedDevices = await _analyticsService.GetPaginatedAsync(page, pageSize);
-        return Ok(paginatedDevices);
-    }
+   
 }

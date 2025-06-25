@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SmartHomeAPI.Business.Dtos.DeviceDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
+using SmartHomeAPI.Business.Services.Implementations;
 
 namespace SmartHomeAPI.Controllers
 {
@@ -58,6 +59,33 @@ namespace SmartHomeAPI.Controllers
             var result = await _deviceService.DeleteAsync(id);
             return result ? NoContent() : NotFound();
         }
+
+        [HttpGet("paginated")]
+        public async Task<IActionResult> GetPaginatedDevices([FromQuery] int page = 1, [FromQuery] int pageSize = 1)
+        {
+            var paginatedDevices = await _deviceService.GetPaginatedAsync(page, pageSize);
+            return Ok(paginatedDevices);
+        }
+
+        [HttpGet("search")]
+        public async Task<IActionResult> SearchByName([FromQuery] string name)
+        {
+            if (string.IsNullOrWhiteSpace(name))
+            {
+                return BadRequest("Search name cannot be empty.");
+            }
+
+            var devices = await _deviceService.SearchByName(name);
+            return Ok(devices);
+        }
+        [HttpGet("online-devices")]
+        public async Task<IActionResult> GetOnlineDevices([FromQuery] string name)
+        {
+            var onlineDevices = await _deviceService.GetOnlineDevices(name);
+            return Ok(onlineDevices);
+        }
     }
+
+  
 }
 

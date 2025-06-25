@@ -10,5 +10,6 @@ public class AppUserAutoMapper : Profile
     {
         CreateMap<AppUser, LoginDto>().ReverseMap();
         CreateMap<AppUser, RegisterDto>().ReverseMap();
+        CreateMap<AppUser, UserGetDto>().ReverseMap();
     }
 }

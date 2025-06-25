@@ -53,24 +53,6 @@ public class AnalyticService : IAnalyticService
         return locationUsage.ToListAsync();
     }
 
-    public async Task<PagedResultDto<DeviceGetDto>> GetPaginatedAsync(int page, int pageSize)
-    {
-        var query = _deviceRepository.GetAll();
-        var totalCount = await query.CountAsync();
-        var paginatedQuery = _deviceRepository.Paginate(query, pageSize, page);
-        var allDevices = paginatedQuery.ToListAsync();
-
-        var dtoList = _mapper.Map<List<DeviceGetDto>>(allDevices);
-
-        return new PagedResultDto<DeviceGetDto>
-        {
-            TotalCount = totalCount,
-            PageSize = pageSize,
-            Page = page,
-            Items = dtoList
-        };
-
-    }
 
     public async Task<double> GetTotalEnergyUsageAsync()
     {
