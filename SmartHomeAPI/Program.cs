@@ -5,6 +5,7 @@ using SmartHomeAPI.Business.ServiceRegistrations;
 using SmartHomeAPI.DataAccess.Data;
 using SmartHomeAPI.DataAccess.DataInitializers;
 using SmartHomeAPI.DataAccess.ServiceRegistrations;
+using SmartHomeAPI.Middlewares;
 using System.Text;
 
 namespace SmartHomeAPI
@@ -43,18 +44,14 @@ namespace SmartHomeAPI
             builder.Services.AddAuthorization();
 
             var app = builder.Build();
-           
+            app.UseExceptionMiddleware();
 
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
-            if (app.Environment.IsDevelopment())
-            {
-                app.UseSwagger();
-                app.UseSwaggerUI();
-            }
+
             app.UseDeveloperExceptionPage();
 
             app.UseHttpsRedirection();
