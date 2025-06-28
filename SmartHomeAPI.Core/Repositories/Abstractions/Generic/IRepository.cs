@@ -1,10 +1,9 @@
 ﻿using Microsoft.EntityFrameworkCore.Query;
-using SmartHomeAPI.Core.Entities.Common;
 using System.Linq.Expressions;
 
-namespace SmartHomeAPI.DataAccess.Repositories.Abstractions.Generic;
+namespace SmartHomeAPI.Core.Repositories.Abstractions.Generic;
 
-public  interface IRepository<T> where T : class
+public interface IRepository<T> where T : class
 {
     IQueryable<T> GetAll(Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null);
     IQueryable<T> GetFilter(Expression<Func<T, bool>> expression, Func<IQueryable<T>, IIncludableQueryable<T, object>>? include = null);

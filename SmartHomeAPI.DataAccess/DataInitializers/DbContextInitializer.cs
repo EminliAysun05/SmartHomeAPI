@@ -29,11 +29,11 @@ public class DbContextInitializer
     public async Task InitDatabaseAsync()
     {
         await _context.Database.MigrateAsync();
-        await _createRolesAsync();
-        await _createAdminAsync();
+        await CreateRoleAsync();
+        await CreateAdminAsync();
     }
 
-    private async Task _createAdminAsync()
+    private async Task CreateAdminAsync()
     {
         var isExist = await _userManager.Users.AnyAsync(x => x.UserName == _adminSettings.UserName);
 
@@ -52,13 +52,14 @@ public class DbContextInitializer
         }
     }
 
-    private async Task _createRolesAsync()
+    private async Task CreateRoleAsync()
     {
-        foreach (string role in Enum.GetNames(typeof(IdentityRoles)))
-        {
-            var isExist = await _roleManager.Roles.AnyAsync(x => x.Name == role);
-            if (isExist) continue;
+        var enumRoleNames = Enum.GetNames(typeof(IdentityRoles));
+        var existingRoleNames = (await _roleManager.Roles.Select(x => x.Name).ToListAsync()).ToHashSet();
 
+        foreach (string role in enumRoleNames)
+        {
+            if (existingRoleNames.Contains(role)) continue;
             IdentityRole identityRole = new() { Name = role };
             await _roleManager.CreateAsync(identityRole);
         }

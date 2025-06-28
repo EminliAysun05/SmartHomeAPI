@@ -1,7 +1,5 @@
 ﻿using SmartHomeAPI.Business.AutoMappers.LocationAutoMappers;
 using SmartHomeAPI.Business.Dtos.AnalyticDtos;
-using SmartHomeAPI.Business.Dtos.DeviceDtos;
-using SmartHomeAPI.Business.Dtos.PaginationDtos;
 
 namespace SmartHomeAPI.Business.Services.Abstractions;
 

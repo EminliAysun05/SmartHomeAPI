@@ -28,9 +28,7 @@ public class SensorReadingController : ControllerBase
     {
         var sensorReading = await _sensorReadingService.GetById(id);
         if (sensorReading == null)
-        {
             return NotFound();
-        }
         return Ok(sensorReading);
     }
 
@@ -38,9 +36,7 @@ public class SensorReadingController : ControllerBase
     public async Task<IActionResult> Create([FromBody] SensorReadingCreateDto sensorReadingCreateDto)
     {
         if (sensorReadingCreateDto == null)
-        {
             return BadRequest("Sensor reading data is null.");
-        }
 
         var createdSensorReading = await _sensorReadingService.CreateAsync(sensorReadingCreateDto);
         return CreatedAtAction(nameof(GetById), new { id = createdSensorReading.Id }, createdSensorReading);
@@ -51,9 +47,7 @@ public class SensorReadingController : ControllerBase
     {
         var latestSensorReading = await _sensorReadingService.GetLatestsByDeviceIdAsync(deviceId);
         if (latestSensorReading == null)
-        {
             return NotFound($"No sensor readings found for device with ID {deviceId}.");
-        }
         return Ok(latestSensorReading);
     }
 }

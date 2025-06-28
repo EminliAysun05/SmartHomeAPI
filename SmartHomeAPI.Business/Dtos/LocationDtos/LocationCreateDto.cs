@@ -2,13 +2,13 @@
 
 namespace SmartHomeAPI.Business.Dtos.LocationDtos;
 
-public class LocationCreateDto : IDto
+public class LocationCreateDto 
 {
     public string Name { get; set; } = null!;
     public int Floor { get; set; } 
     public string RoomType { get; set; } = null!;
 }
-public class LocationGetDto : IDto
+public class LocationGetDto 
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;
@@ -16,7 +16,7 @@ public class LocationGetDto : IDto
     public string RoomType { get; set; } = null!;
 }
 
-public class LocationWithDevicesDto : IDto
+public class LocationWithDevicesDto 
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;

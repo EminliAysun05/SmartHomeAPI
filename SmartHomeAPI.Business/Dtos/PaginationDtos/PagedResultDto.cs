@@ -2,7 +2,7 @@
 
 namespace SmartHomeAPI.Business.Dtos.PaginationDtos;
 
-public class PagedResultDto<T> : IDto
+public class PagedResultDto<T> 
 {
     public int TotalCount { get; set; }
     public int PageSize { get; set; }

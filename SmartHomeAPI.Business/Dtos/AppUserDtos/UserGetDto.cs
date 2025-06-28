@@ -2,7 +2,7 @@
 
 namespace SmartHomeAPI.Business.Dtos.AppUserDtos;
 
-public class UserGetDto : IDto
+public class UserGetDto 
 {
     public string Id { get; set; } = null!;
     public string UserName { get; set; } = null!;

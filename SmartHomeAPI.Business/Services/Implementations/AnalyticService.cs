@@ -2,10 +2,9 @@
 using Microsoft.EntityFrameworkCore;
 using SmartHomeAPI.Business.AutoMappers.LocationAutoMappers;
 using SmartHomeAPI.Business.Dtos.AnalyticDtos;
-using SmartHomeAPI.Business.Dtos.DeviceDtos;
-using SmartHomeAPI.Business.Dtos.PaginationDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
-using SmartHomeAPI.DataAccess.Repositories.Abstractions;
+using SmartHomeAPI.Core.Repositories.Abstractions;
+
 
 namespace SmartHomeAPI.Business.Services.Implementations;
 

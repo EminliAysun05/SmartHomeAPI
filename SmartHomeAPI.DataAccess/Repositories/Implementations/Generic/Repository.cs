@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Query;
+using SmartHomeAPI.Core.Repositories.Abstractions.Generic;
 using SmartHomeAPI.DataAccess.Data;
-using SmartHomeAPI.DataAccess.Repositories.Abstractions.Generic;
 using System.Linq.Expressions;
 
 namespace SmartHomeAPI.DataAccess.Repositories.Implementations.Generic;

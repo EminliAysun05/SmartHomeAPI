@@ -2,7 +2,7 @@
 
 namespace SmartHomeAPI.Business.Dtos.DeviceDtos;
 
-public class DeviceCreateDto : IDto
+public class DeviceCreateDto 
 {
     public string Name { get; set; } = null!;
     public bool IsOnline { get; set; }
@@ -12,7 +12,7 @@ public class DeviceCreateDto : IDto
     public int LocationId { get; set; }
 }
 
-public class DeviceGetDto : IDto
+public class DeviceGetDto 
 {
     public int Id { get; set; }
     public string Name { get; set; } = null!;

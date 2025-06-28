@@ -2,7 +2,7 @@
 
 namespace SmartHomeAPI.Business.Dtos.SensorReadingDtos;
 
-public class SensorReadingCreateDto : IDto
+public class SensorReadingCreateDto 
 {
     public double Value { get; set; }
     public string Unit { get; set; } = null!;

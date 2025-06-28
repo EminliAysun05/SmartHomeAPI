@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using SmartHomeAPI.Business.Dtos.LocationDtos;
 using SmartHomeAPI.Business.Services.Abstractions;
 using SmartHomeAPI.Core.Entities;
-using SmartHomeAPI.DataAccess.Repositories.Abstractions;
+using SmartHomeAPI.Core.Repositories.Abstractions;
 
 namespace SmartHomeAPI.Business.Services.Implementations;
 

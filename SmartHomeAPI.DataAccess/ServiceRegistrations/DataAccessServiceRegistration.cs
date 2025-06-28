@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using SmartHomeAPI.Core.Entities;
+using SmartHomeAPI.Core.Repositories.Abstractions;
 using SmartHomeAPI.DataAccess.Data;
 using SmartHomeAPI.DataAccess.DataInitializers;
-using SmartHomeAPI.DataAccess.Repositories.Abstractions;
 using SmartHomeAPI.DataAccess.Repositories.Implementations;
 
 namespace SmartHomeAPI.DataAccess.ServiceRegistrations;
@@ -15,7 +15,7 @@ public static class DataAccessServiceRegistration
     public static IServiceCollection AddDataAccessServices(this IServiceCollection services, IConfiguration configuration)
     {
         services.AddDbContext<AppDbContext>(options =>
-     options.UseNpgsql(configuration.GetConnectionString("Default")));
+        options.UseNpgsql(configuration.GetConnectionString("Default")));
 
 
         services.AddScoped<DbContextInitializer>();
@@ -23,12 +23,12 @@ public static class DataAccessServiceRegistration
         services.AddMemoryCache();
         services.AddScoped<AppUser>();
 
-        _addIdentity(services);
-        _addRepositories(services);
+        AddIdentity(services);
+        AddRepositories(services);
 
         return services;
     }
-    private static void _addIdentity(IServiceCollection services)
+    private static void AddIdentity(IServiceCollection services)
     {
         services.AddIdentity<AppUser, IdentityRole>(options =>
         {
@@ -47,9 +47,8 @@ public static class DataAccessServiceRegistration
           
     }
 
-    private static void _addRepositories(IServiceCollection services)
+    private static void AddRepositories(IServiceCollection services)
     {
-   
         services.AddScoped<IDeviceRepository, DeviceRepository>();
         services.AddScoped<IDeviceCategoryRepository, DeviceCategoryRepository>();
         services.AddScoped<ILocationRepository, LocationRepository>();
